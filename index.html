@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ph França - Portfólio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Ph França
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          phfranca@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +12345678912
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">Sobre Mim</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Habilidades</a>
+          <a class="topmenu" href="#projects">Projetos</a>
+          <a class="topmenu" href="#recommendations">Recomendações</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://gifdb.com/images/high/baby-boy-typing-ro53jazyk5esi55g.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Olá, Me chamo Ph França! <img src="https://em-content.zobj.net/thumbs/120/apple/354/waving-hand_1f44b.png" width="60px"/>
+          </h1>
+          <p>
+            Eu sou um desenvolvedor full stack com 2 anos de experiência em camadas de aplicação e apresentação.
+            Eu trabalhei em aplicações e microsserviços implantados na IBM Cloud. 
+            Eu sou um usuário ávido dos Serviços IBM Watson e trabalhei em Watson Assistant, NLU, Analisador de Sentimentos, para citar alguns.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 anos de experiência</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 anos de experiência</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p>.5 ano de experiência</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>1 ano de experiência</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node.js</h6>
+            <p>1 ano de experiência</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>1 ano de experiência</p>
+        </div> 
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projetos
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>OPEN AI</h3>
+            <ul>
+              <li>Developed a secure website integrated with OPEN-AI for an gas and oil client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fórmula Secreta</h3>
+            <ul>
+              <li>Desenvolvi uma fórmula secreta, utilizando a ajuda da Assistente Watson da IBM</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Um site bonito!</h3>
+            <ul>
+              <li>Criei um site, com várias páginas para uma loja virtual integrado com um carrinho de compras.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales feugiat elit id ullamcorper. Sed malesuada, nibh eget bibendum imperdiet, sapien mi pretium libero, vel eleifend tellus velit vel risus.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Phasellus efficitur metus eu neque feugiat, ac porttitor purus faucibus. Integer sodales, nisl quis imperdiet bibendum, ex est ultrices quam, eget euismod velit nibh ac metus.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas feugiat leo in tincidunt pellentesque. Praesent sollicitudin quis massa in pharetra. Nunc sed tristique nunc.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Muito obrigado por deixar sua recomendação!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
